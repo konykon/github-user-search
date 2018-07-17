@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobile-web-app-capable" content="yes">
+	<title>My test page</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<!-- Inserts glyphicons	-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="width">
+			<input type="search" name="search" id="search" class="search" placeholder="Search username..." value="">
+			<button id="search-button" class="search-button">Search</button>
+		</div>
+
+		<div id="exist" class="hidden width">
+
+			<div class="flex">
+				<div class="flex">
+					<img id="avatar" class="avatar" alt="User's avatar" />
+				</div>
+
+				<div class="user-details">
+					<p id="userName" class="user-name"></p>
+					<p id="name" class="name"></p>
+					<p id="bio" class="bio"></p>
+				</div>
+			</div>
+
+			<div class="width">
+				<h4>Repositories</h4>
+				<ul id="list">
+				</ul>
+			</div>
+
+		</div>
+
+		<div id="notExist" class="error-div hidden">
+			<p>Does not exist</p>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
