@@ -10,30 +10,11 @@ html {
 	font-size: 62.5%;
 }
 
-@media only screen and (max-width: 75em) {
-	html {
-		font-size: 56.25%;
-	}
-}
-
-@media only screen and (max-width: 56.25em) {
-	html {
-		font-size: 50%;
-	}
-}
-
-@media only screen and (min-width: 112.5em) {
-	html {
-		font-size: 75%;
-	}
-}
-
 body {
 	margin: 20px;
 	font-family: sans-serif;
 	display: flex;
 	flex-direction: column;
-	text-align: left;
 	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%),
 	url("github-logo-face.png") repeat 0 0;
 	background-size: 100px 100px;
@@ -48,14 +29,12 @@ body {
 }
 
 h1 {
-	text-align: center;
 	padding-bottom: 3rem;
 	font-family: 'Courier New', Courier, monospace;
 	font-size: 250%;
 }
 
 div {
-	align-self: center;
 	text-align: center;
 }
 
@@ -77,33 +56,30 @@ div {
 }
 
 .error-div {
-	border: 1px solid #e093ba;
+	border: 1px solid #86383e;
 	border-radius: 5px;
-	background-color: #fcd9df;
+	background-color: #d1adad;
 	font-size: 14px;
 	color: #86383e;
-	padding: 0px 0px 0px 3px;
-	margin: 10px 0px 10px 0px;
-	width: 98%;
-}
-
-.error-div>p {
-	padding: 0px 0px 0px 15px;
-}
-
-.user-details {
-	flex-direction: column;
+	padding: 18px 0px;
+	margin-top: 31px;
+	transform: translateX(5px);
 }
 
 .flex,
 span {
 	display: flex;
+	font-weight: normal;
 }
 
 .avatar {
 	width: 64px;
 	height: 64px;
 	padding: 15px 10px 15px 0px;
+}
+
+.user-details {
+	align-self: center;
 }
 
 .user-name,
@@ -132,15 +108,8 @@ h4 {
 	font-size: 160%;
 }
 
-ul {
-	list-style: none;
-	margin-top: 0;
-	padding: 0;
-}
-
 li {
-	text-align: left;
-	padding: 20px 10px 20px 10px;
+	padding: 20px 10px;
 	border-bottom: 1px solid #a3a3a3;
 	font-size: 17px;
 	font-weight: bold;
@@ -148,18 +117,13 @@ li {
 	justify-content: space-between;
 }
 
+i {
+	padding: 0px 3px;
+}
+
 .repo-name {
 	word-wrap: break-word;
 	width: 250px;
-}
-
-.span {
-	float: right;
-	font-weight: normal;
-}
-
-.span>i {
-	padding: 0px 3px 0px 3px;
 }
 
 .hidden {
@@ -171,12 +135,21 @@ li {
 }
 
 @media only screen and (orientation: portrait) {
+	html {
+		font-size: 50%;
+	}
+
+	.container {
+		width: 30rem;
+	}
+
 	.width {
-		width: 300px;
+		width: 240px;
+		padding: 0;
 	}
 
 	.search {
-		width: 230px;
+		width: 165px;
 	}
 
 	.repo-name {
@@ -184,7 +157,8 @@ li {
 	}
 
 	h4,
-	li {
+	li,
+	.name {
 		font-size: 15px;
 	}
 }
