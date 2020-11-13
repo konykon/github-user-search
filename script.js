@@ -12,9 +12,8 @@ const get = async (url) => {
 	});
 	if (!response.ok) {
 		throw new Error(`HTTP error! status: ${response.status}`);
-	} else {
-		return await response.json();
 	}
+	return await response.json();
 }
 
 const displayContent = async () => {
