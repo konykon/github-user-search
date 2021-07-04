@@ -19,7 +19,7 @@ const get = async (url) => {
 const displayContent = async () => {
 	let user = $("#search").val();
 	const urlUser = get(`https://api.github.com/users/${user}`);
-	const urlRepo = get(`https://api.github.com/users/${user}/repos1`);
+	const urlRepo = get(`https://api.github.com/users/${user}/repos`);
 
 	let urls = await Promise.all([urlUser, urlRepo]);
 
